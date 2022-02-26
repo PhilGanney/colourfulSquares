@@ -1,2 +1,2 @@
 # colourfulSquares
- For noodling on colour themes
+ For noodling on colour themes.
