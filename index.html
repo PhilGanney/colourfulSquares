@@ -27,6 +27,15 @@
 				height: 300px;
 				border: black 1px dashed;
 				overflow: auto;
+				
+				scrollbar-color: #5acb5a #cbefcd;/*As of March 2022 only firefox actually supports this - psuedo selector for webkit in use as well. First colour is the thumb, second is the track.*/
+				
+			}
+			.bigBox::-webkit-scrollbar { /*OPTIONAL: swap the class for "HTML *" to make this apply to the main page scrollbars too*/
+				background-color: #cbefcd;
+			}
+			.bigBox::-webkit-scrollbar-thumb {
+				background: #5acb5a;
 			}
 			.fullWidth{
 				width: 100%;
