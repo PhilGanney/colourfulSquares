@@ -20,13 +20,29 @@
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
+				margin: 0px;
 			}
 			.bigBox{
 				width: 300px;
 				height: 300px;
 				border: black 1px dashed;
+				overflow: auto;
+			}
+			.fullWidth{
+				width: 100%;
 			}
 			/*Individual boxes*/
+			#titleBox{
+				background-color: #338466;
+				color: #FFFB83;
+				text-align: center;
+				position: sticky;
+				top: 0px;
+			}
+			#titleBox h1{
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
 			#bigBox1{
 				background-color: #338466;
 				color: #FFFB83;
@@ -34,6 +50,8 @@
 			#bigBox2{
 				background-color: #424496;
 				color: #FFFB83;
+				font-size: 35px;
+				overflow-wrap: break-word;
 			}
 			#bigBox3{
 				background-color: #db1e1e;
@@ -42,10 +60,12 @@
 			#bigBox4{
 				background-color: #17201d;
 				color: #FFFB83;
+				font-size: x-large;
 			}
 		</style>
 	</head>
 	<body>
+		<div id="titleBox" class="fullWidth"><h1>colourfulSquares</h1></div>
 		<div id="bigBox1" class="bigBox">Elegant Neandarthals swim through icey waters beautifully jostling a mix of koalas, pandas, quail, voles and zebras.</div>
 		<div id="bigBox2" class="bigBox">abcdefghijklmnopqrstuvwxyz</div>
 		<div id="bigBox3" class="bigBox">The quick brown fox jumps over the lazy dog</div>
