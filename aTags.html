@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- this next tag appears in search engine results as the pages title, is shown in the browser tab on most browsers (or as the title bar in browsers without tabs) and is usually what browsers list the page as in history and bookmarks. Generally you always want to have a title tag. For games it makes sense to match up with the game name, or maybe sometimes have it say the level or area name. Can't type that tag name even in a comment, as if a link to this page is shared on whattsapp it will take the rest of this comment as the sharing description!! -->
+		<title>colourfulSquares</title>
+		<meta name="description" content="for noodling on colour themes"></meta>
+		<!-- Favourites Icon - also the tab icon -->
+		<link rel="icon" href="favicon.png" type="image/x-icon"></link>
+		<!-- Core styles, resets and default styles.-->
+		<style>
+			html{
+				margin: 0px;
+				padding:0px;
+			}
+			body{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 0px;
+			}
+			.bigBox{
+				width: 300px;
+				height: 300px;
+				border: black 1px dashed;
+				overflow: auto;
+				
+				scrollbar-color: #5acb5a #cbefcd;/*As of March 2022 only firefox actually supports this - psuedo selector for webkit in use as well. First colour is the thumb, second is the track.*/
+				
+			}
+			.bigBox::-webkit-scrollbar { /*OPTIONAL: swap the class for "HTML *" to make this apply to the main page scrollbars too*/
+				background-color: #cbefcd;
+			}
+			.bigBox::-webkit-scrollbar-thumb {
+				background: #5acb5a;
+			}
+			.fullWidth{
+				width: 100%;
+			}
+			/*Individual boxes*/
+			#titleBox{
+				background-color: #338466;
+				color: #FFFB83;
+				text-align: center;
+				position: sticky;
+				top: 0px;
+			}
+			#titleBox h1{
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			#bigBoxA{
+				background-color: #dbf3ea;
+				color: #727146;
+			}
+			#bigBoxAbbr{
+				background-color: #424496;
+				color: #FFFB83;
+			}
+			#bigBoxAddress{
+				background-color: #db1e1e;
+				color: #FFFB83;
+			}
+			#bigBoxArea{
+				background-color: #ff087f;
+				color: #FFFB83;
+			}
+			#bigBoxArticle{
+				background-color: #17201d;
+				color: #FFFB83;
+			}
+			#bigBoxAside{
+				background-color: #058157;
+				color: #FFFB83;
+			}
+			#bigBoxAudio{
+				background-color: #0f146e;
+				color: #FFFB83;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="titleBox" class="fullWidth"><h1>colourfulSquares HTML tags: A</h1></div>
+		<div id="bigBoxA" class="bigBox">
+			<h2>&#60;a&#62;</h2>
+			The "anchor" tag or link. 
+			<a href="https://www.tearounder.app">Visit tearounder.app</a>
+		</div>
+		<div id="bigBoxAbbr" class="bigBox">
+			<h2>&#60;abbr&#62;</h2>
+			Abbreviation, marked with dotted underline, and what it stands for showing on mouseover. Doesn't seem to do anything on mobile as standard, other than show the dotted underline.
+			<abbr title="HyperText Markup Language">HTML</abbr> is easy to learn, but takes a while to master.
+		</div>
+		<div id="bigBoxAddress" class="bigBox">
+			<h2>&#60;address&#62;</h2>
+			defines the contact information for the author/owner of a document or an article
+			<address> 
+			Visit us at:<br>
+			example.com<br>
+			123 Example Road, <br>
+			Exampleville
+			</address>
+		</div>
+		<div id="bigBoxArea" class="bigBox">
+			<h2>&#60;area&#62;</h2>
+			Used within an "image map" (the map tag) 
+			The w3schools example for this is really good:
+			https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap
+		</div>
+		<div id="bigBoxArticle" class="bigBox"><h2>&#60;article&#62;</h2></div>
+		<div id="bigBoxAside" class="bigBox"><h2>&#60;aside&#62;</h2></div>
+		<div id="bigBoxAudio" class="bigBox"><h2>&#60;audio&#62;</h2></div>
+		<!-- <div id="bigBoxN" class="bigBox"></div>-->
+	</body>
+	
+</html>
