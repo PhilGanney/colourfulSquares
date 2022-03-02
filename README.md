@@ -12,7 +12,7 @@ I also see some potential for it:
 
 ## For web devs, who are used to working with HTML and CSS
 Web devs who are used to HTML and CSS might find this useful for "noodling on colour themes" on their regular dev devices, even when there's no controls on the page to change the styling.
-
+I find that this works well the dev tools built within Google Chrome on PC. Those tools let me use a colour picker, and even let me add in other styles really easily, while colourfulSquares gives a good choice of content to style with sensible yet easily overridden defaults.
 
 ## Maybe at some point
 I might make this into a little web-app with controls to let people change the styles. It's a possibility that I'm open to doing at some point if it seems like a good use of my time.
